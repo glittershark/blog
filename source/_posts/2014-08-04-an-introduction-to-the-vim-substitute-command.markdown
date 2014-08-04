@@ -55,25 +55,24 @@ Let’s say we’re issuing a SQL UPDATE command on this table, and want to pass
 named parameters using the `:parameter` syntax. So that’d look like this:
 
 ```sql
-    UPDATE users SET
-        id = :id     
-        email = :email     
-        created_at = :created_at     
-        updated_at = :updated_at     
-        encrypted_password = :encrypted_password     
-        reset_password_token = :reset_password_token     
-        reset_password_sent_at = :reset_password_sent_at     
-        remember_created_at = :remember_created_at     
-        sign_in_count = :sign_in_count     
-        current_sign_in_at = :current_sign_in_at     
-        last_sign_in_at = :last_sign_in_at     
-        current_sign_in_ip = :current_sign_in_ip     
-        last_sign_in_ip = :last_sign_in_ip     
-        confirmation_token = :confirmation_token    
-        confirmed_at = :confirmed_at    
-        confirmation_sent_at = :confirmation_sent_at
-    ;
-
+UPDATE users SET
+    id = :id     
+    email = :email     
+    created_at = :created_at     
+    updated_at = :updated_at     
+    encrypted_password = :encrypted_password     
+    reset_password_token = :reset_password_token     
+    reset_password_sent_at = :reset_password_sent_at     
+    remember_created_at = :remember_created_at     
+    sign_in_count = :sign_in_count     
+    current_sign_in_at = :current_sign_in_at     
+    last_sign_in_at = :last_sign_in_at     
+    current_sign_in_ip = :current_sign_in_ip     
+    last_sign_in_ip = :last_sign_in_ip     
+    confirmation_token = :confirmation_token    
+    confirmed_at = :confirmed_at    
+    confirmation_sent_at = :confirmation_sent_at
+;
 ```
 
 We can take the list of columns from the postgres output and translate it into that
