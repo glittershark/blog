@@ -370,7 +370,8 @@ end
 desc "Deploy website via s3cmd"
 task :s3 do
   puts "## Deploying website via s3cmd"
-  ok_failed system("s3cmd sync --acl-public --reduced-redundancy public/* s3://#{s3_bucket}/")
+  ok_failed system "s3cmd sync --acl-public --reduced-redundancy public/* s3://#{s3_bucket}/"
+  ok_failed system "s3cmd -m 'text/css; charset=utf-8' sync public/stylesheets/screen.css s3://#{s3_bucket}/stylesheets/screen.css"
 end
 
 def ok_failed(condition)
