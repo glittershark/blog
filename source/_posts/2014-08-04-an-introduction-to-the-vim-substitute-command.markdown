@@ -78,7 +78,7 @@ named parameters using the `:parameter` syntax. So that’d look like this:
 
 We can take the list of columns from the postgres output and translate it into that
 `UPDATE` command in just one `:substitute` command. Assuming we’ve selected the column
-list using [visual-line mode]("http://vimdoc.sourceforge.net/htmldoc/visual.html#V"), here’s
+list using [visual-line mode](http://vimdoc.sourceforge.net/htmldoc/visual.html#V), here’s
 that command:
 
 ```vim  linenos:false
