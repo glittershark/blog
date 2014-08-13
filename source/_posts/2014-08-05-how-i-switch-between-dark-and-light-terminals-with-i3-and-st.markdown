@@ -27,7 +27,7 @@ folder:
 ```bash ~/bin/swap_dark.sh https://github.com/glittershark/dotfiles/blob/master/bin/swap_dark.sh
 #!/bin/bash
 
-FILE="/home/smith/.term_dark"
+FILE="$HOME/.term_dark"
 
 if [ "$(< $FILE)" = 't' ]; then
   echo 'f' > $FILE
