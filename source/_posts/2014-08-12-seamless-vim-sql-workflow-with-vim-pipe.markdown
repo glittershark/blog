@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Seamless vim SQL workflow with vim-pipe"
-date: 2014-08-12 21:53:01 -0400
+date: 2014-08-15 22:21:30 -0400
 comments: true
 categories: vim
 
