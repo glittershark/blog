@@ -99,7 +99,7 @@ machine. Usually it'll be on a server or inside a dev machine. This approach
 will still work for that, though, by using the following line in your vimrc:
 
 ```vim
-autocmd FileType sql let b:vimpipe_filetype="ssh you@yourserver.com 'psql mydb myuser'"
+autocmd FileType sql let b:vimpipe_command="ssh you@yourserver.com 'psql mydb myuser'"
 ```
 
 It can also be helpful to be able to send SQL scripts to multiple different
@@ -120,3 +120,4 @@ of the postgres `COPY TO STDOUT` command to the input of the `COPY FROM STDIN`
 command. The possibilities are numerous.
 
 Have fun!
+
