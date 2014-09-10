@@ -6,7 +6,7 @@ comments: true
 categories: vim,ruby
 ---
 
-As of ruby 2.1, hashes that previously looked like:
+As of ruby 1.9, hashes that previously looked like:
 
 ```ruby
 {
